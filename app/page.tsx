@@ -30,20 +30,27 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
+          {
+            /* 
+            *  by adding the priority property to the <Image> in
+            *  This ensures the image is prioritized for loading, as recommended for above-the-fold content.
+            */
+          }
           <Image
             src="/hero-desktop.png"
             width={1000}
             height={760}
             className="hidden md:block"
             alt="Screenshots of the dashboard project showing desktop version"
+            priority
           />
           <Image
             src="/hero-mobile.png"
             width={560}
             height={620}
-            className="block md:hidden
-            "
+            className="block md:hidden"
             alt="Screenshots of the dashboard project showing mobile version"
+            priority
           />
         </div>
       </div>
