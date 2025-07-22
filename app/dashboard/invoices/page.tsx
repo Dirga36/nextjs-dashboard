@@ -6,7 +6,7 @@ import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { fetchInvoicesPages } from '@/app/lib/data';
-import Layout from '../dashboard/layout'
+import Layout from '../layout'
 
 export default async function Page(props: {
   searchParams?: Promise<{

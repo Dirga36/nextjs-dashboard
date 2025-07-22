@@ -1,7 +1,7 @@
 import Form from '@/app/ui/invoices/create-form';
 import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import { fetchCustomers } from '@/app/lib/data';
-import Layout from '../../dashboard/layout'
+import Layout from '../../layout'
 import { createInvoice } from '@/app/lib/actions';
 
 export default async function Page() {
