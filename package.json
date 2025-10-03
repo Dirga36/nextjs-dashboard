@@ -37,6 +37,9 @@
       "@vercel/speed-insights",
       "bcrypt",
       "sharp"
+    ],
+    "ignoredBuiltDependencies": [
+      "unrs-resolver"
     ]
   }
 }
